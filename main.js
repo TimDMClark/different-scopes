@@ -1,4 +1,4 @@
-// C is for Cooking
+// C is for Cooking COMPLETE
 const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"];
 
 for (let y = 1; y < cookies.length; y++) {
@@ -6,7 +6,7 @@ for (let y = 1; y < cookies.length; y++) {
     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
 };
 
-// Conjunction Function
+// Conjunction Function COMPLETE
 const conjunction = function (firstWord, secondWord) {
     const conjoinedWord = `${firstWord} ${secondWord}`
     console.log(conjoinedWord)
@@ -14,7 +14,7 @@ const conjunction = function (firstWord, secondWord) {
 
 conjunction("Master", "Card")
 
-// Mod Squad
+// Mod Squad COMPLETE
 {
     const modSquad = {
         "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
@@ -43,21 +43,34 @@ for (const location of locations) {
 
     if (invalidLocation) {
         console.log("This location is invalid")
-    }
+    } else (console.log('This location is valid'))
 };
 
-// Advanced: Lambda Llama INCOMPLETE
-const llamaNamer = () => {
+// Advanced: Lambda Llama COMPLETE
+const llamaNamer = function () {
     const possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"]
     const randomizer = Math.floor(Math.random() * 7)
 
     const namer = function () {
         const suffix = " the Llama"
-        const name = possibleNames[randomizer]
-        return name + suffix
+        const llamaName = possibleNames[randomizer]
+        return llamaName + suffix
     }
-    
-    nameMaker = llamaNamer() + namer()
-    console.log(nameMaker)
-    
+
+return namer()
 };
+
+nameMaker = llamaNamer();
+console.log(nameMaker);
+
+// Below is same code with just one function. (Not recommended for bigger projects for oganization and troubleshooting!)
+// const llamaNamer = () => {
+//     const possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"]
+//     const randomizer = Math.floor(Math.random() * 7)
+//     const name = possibleNames[randomizer]
+//     const suffix = " the Llama"
+//     return name + suffix
+// };
+    
+// const nameMaker = llamaNamer();
+// console.log(nameMaker);
